@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { render } from 'react-dom';
-import { Router, Link, Route ,browserHistory} from 'react-router';
+import { Router, Link, Route ,browserHistory,hashHistory} from 'react-router';
 
 import HelloHandler from './hello.js';
 // import Forms from './form.js';
@@ -13,7 +13,7 @@ let App = React.createClass({
   render() {
     return (
       <div className="nav">
-        <Link to="/hello" className="hellolink">Say Hello</Link>
+        <Link to="/hello" className="hellolink">Say Heelo </Link>
         <Link to="/timer" className="timerlink">Timer</Link>
         <Link to="/data" className="datalink">Data Growth</Link>
         {this.props.children}
@@ -24,7 +24,7 @@ let App = React.createClass({
 
 
 render(
-  (<Router history={browserHistory}>
+  (<Router history={hashHistory}>
     <Route path="/" component={App}>
       <Route path="/hello" component={HelloHandler} />
       <Route path="/timer" component={Timer} />
