@@ -6,7 +6,7 @@ var cwd = __dirname;
 var serveIndex = require('koa-serve-index');
 
 app.use(serveIndex(cwd,{
-  hidden:true,
+  hidden:true
   view:'details'
 }));
 

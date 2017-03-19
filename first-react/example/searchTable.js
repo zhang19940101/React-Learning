@@ -61,7 +61,7 @@ var SearchBar = React.createClass({
         this.refs.inStockOnlyInput.getDOMNode().checked
       );
     },
-    render: function() {
+    render: function() { 
         return (
             <form>
                 <input type="text" placeholder="Search..." value={this.props.filterText} ref="filterTextInput" onChange={this.handleChange} />
@@ -104,5 +104,3 @@ module.exports = React.createClass({
         );
     }
 });
-
-
