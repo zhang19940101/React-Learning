@@ -27,4 +27,5 @@ app.use(serve(cwd,{
 }));
 
 app.listen(8000);
-console.log('server start at '+ 8000);
+console.log('server start at '+ 8000);//哈哈哈哈哈哈哈
+console.log('server start at '+ 8000);//哈哈哈哈哈哈哈
